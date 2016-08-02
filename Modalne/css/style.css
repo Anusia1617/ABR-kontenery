@@ -1,0 +1,294 @@
+
+/* BOOTSTRAP END*/
+.cialo {
+    width:966px;
+    margin: 0 auto;
+    font-family:"Segoe UI";
+    line-height: 1.2;
+    color: #191919;
+    
+    
+}
+
+.cialo .naglowek {
+    width: 964px;
+        height: 250px;
+        background: url('http://galeria.abrsteel.pl/architektura/header_zps5e1bccad.jpg') top repeat-x;
+        background-size: 100% 100%;
+        border: 1px solid #CAC8C8;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+        
+}
+
+.menu {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    
+    text-decoration: none;
+}
+.menu li {
+    display: inline;
+    
+    text-align: center;
+}
+.menu li a {
+    color:black;
+    font-size:14px;
+    padding: 15px 45px 16px 45px;
+    text-decoration: none;
+}
+.menu li a:hover {
+            background: #E3000A;
+            color: white;
+        }
+
+
+.anigif {
+    
+    width: 472px;
+    height: 331px;
+	overflow:hidden;
+    
+}
+.anigif img{
+    
+    width: auto;
+    height: 331px;
+    
+}
+.anigif img.wysoki{
+    
+    width: 472px;
+    height: auto;
+    
+}
+
+
+
+.tytulowy {
+    width: 472px;
+    height: 331px;
+    position:relative;
+}
+.tytulowy img{
+    
+    width: 472px;
+    height: 331px;
+    
+}
+
+.miniatura {
+        width: 231px;
+        height:162px;
+        float: left;
+        overflow: hidden;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+}
+.miniatura img{
+        width: auto;
+        height:162px;
+}
+
+.duzy {
+    width: 954px;
+    height:330px;
+    position:relative;
+}
+
+.maly {
+    width:312px;
+    height:330px;
+    position:relative;
+}
+
+.pionowy {
+    width:312px;
+    height:670px;
+    
+}
+
+.inne {
+    width: 472px;
+    height:196px;
+}
+.inne img {
+    width: 472px;
+    height:196px;
+}
+
+.kontakt {
+    text-align: center;
+        width:312px;
+    height:330px;
+    position:relative;
+}
+
+
+.wiersz div.gielda_kontenerow {
+            background: url('http://galeria.abrsteel.pl/allegro_gielda.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: block;
+        width:312px;
+    height:330px;
+    position:relative;
+}
+
+.przezrocze {
+position:absolute;margin:0 auto;width:100%;height:100%;
+}
+
+.wiersz div.mapa {
+    	background: url('http://galeria.abrsteel.pl/mapa/konturowa-mapa-polski2-h.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+        display: block;
+            width:312px;
+    height:330px;
+    position:relative;
+}
+
+
+
+.cialo table {
+	width:100%;
+    padding:5px;
+	font-size: 14px;
+    color: #191919;
+    line-height:1rem;
+}
+.cialo table td {
+padding:5px;
+line-height:1rem;	
+}
+.cialo table th
+{
+	background: #d40000;
+   text-align: center;
+   	line-height:1rem;
+	padding:5px;
+   color: white;
+}
+
+.drugi {
+	background: #F2F2F2;
+}
+.rectangle-list {
+	margin:0;
+	
+	
+	padding:0;
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.rectangle-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #F2F2F2;
+	font-size: 12px;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+
+.rectangle-list a:hover{
+    background: #eee;
+	
+	
+}   
+
+.rectangle-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rectangle-list a:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+.rectangle-list a:hover:after{
+    left: -.5em;
+    border-left-color: #fa8072;             
+}
+
+.cialo p
+{
+    font-size: 16px;
+    color: #191919;
+    line-height:1;
+}
+.cialo h1
+{
+      font-size: 18px;
+    color:#E3000A;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+
+.cialo h2 {
+    font-size: 18px;
+    color:#E3000A;
+    margin-top:10px;
+    margin-bottom:10px;
+    border:0px;
+}
+.cialo a
+{
+    text-decoration: none;
+    color:#191919;
+}
+.cialo a:hover
+{
+    
+    color: #E3000A;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+.wiersz div.opis p {
+margin:0px;
+    font-size:14px;
+}
+.wiersz div.opis li {
+margin:0px ;
+    font-size:14px;
+}
+.wiersz div.opis {
+	width:auto;
+    box-shadow:none;
+    padding:5px;
+    text-align: center;
+}
+
+.wiersz div {
+    float:left;
+    margin:5px;
+    background:white;
+    
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+}

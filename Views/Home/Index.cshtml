@@ -1,0 +1,158 @@
+﻿@model KonteneryMVC.Models.ContactModels
+
+@{Html.EnableClientValidation(true);}
+
+@{
+    ViewBag.Title = "Kontenery Pawilony";
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/Upload.js"></script>
+<script>
+    $(document).ready(function () {
+        if ('@ViewBag.Message' == 'Sent') {
+            alert('Dziękujemy, Twój e-mail został wysłany!');
+        }
+    });
+</script>
+
+<div style="height:1px;width:100%;display:block;"></div>
+<div class="header" data-magellan-expedition="fixed">
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li data-magellan-arrival="home" class="name">
+                <a href="#home"><img src="~/Content/Img/home32.png" /></a>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
+        <section class="top-bar-section">
+            <ul class="right">
+                <li data-magellan-arrival="usluga"><a href="#usluga">PAWILON HANDLOWY</a></li>
+                <li data-magellan-arrival="magazynowe"><a href="#magazynowe">KONTENER MAGAZYNOWY i KONTENER MORSKI</a></li>
+                <li data-magellan-arrival="socjalne"><a href="#socjalne">KONTENER BUDOWLANY</a></li>
+                <li data-magellan-arrival="hakowy"><a href="#hakowy">KONTENER HAKOWY</a></li>
+                <li data-magellan-arrival="portiernia_strozowka"><a href="#portiernia_strozowka">PORTIERNIA STRÓŻÓWKA</a></li>
+                <li data-magellan-arrival="referencje"><a href="#referencje">REFERENCJE</a></li>
+                <li data-magellan-arrival="kontakt"><a href="#kontakt">KONTAKT</a></li>
+            </ul>
+        </section>
+    </nav>
+</div>
+<!-- Sekcja 1 (Strona głowna)-->
+<section class="sekcja1">
+    @Html.Partial("_Sekcja1")
+</section>
+<!-- Sekcja 2  ( Pawilon handlowy)-->
+<section class="sekcja2">
+   @Html.Partial("_Sekcja2")
+</section>
+<!-- Sekcja 3 (Kontener magazynowy)-->
+<section class="sekcja3">
+   @Html.Partial("_Sekcja3")
+</section>
+<!-- Sekcja 4 (KONTENER BUDOWLANY)-->
+<section class="sekcja4">
+   @Html.Partial("_Sekcja4")
+</section>
+<!-- Sekcja 5 (Kontener hakowy)-->
+<section class="sekcja5">
+    @Html.Partial("_Sekcja5")
+</section>
+<!-- Sekcja 6 (Portiernia Stróżówka)-->
+<section class="sekcja6">
+    @Html.Partial("_Sekcja6")
+</section>
+<section class="sekcja8">
+    @Html.Partial("_Sekcja8")
+</section>
+
+<section class="sekcja7">
+    <div class="row">
+        <div class="large-6 medium-6 small-12 columns right" id="sekcja7">
+            <div class="klocek5">
+                <h1>Kontakt</h1>
+            </div>
+        </div>
+        <div class="large-6 medium-6 small-12 columns left">
+            <div class="klocek8">
+                <div class="inklocek4">
+                    <h5>ABR Sp. z o.o.<br /> PAWILONY I KONTENERY </h5>
+                    <ul>
+                        <li><span class="adres">43-190 Mikołów, ul. Dzieńdziela 40</span></li>
+                        <li>NIP: 635-173-49-72 Regon: 240309585</li>
+                        <li>Alior Bank 84 2490 0005 0000 4530 3905 4456</li>
+                        <li><span class="telefon"><a href="tel:534460464">+48 534 460 464</a>, <a href="tel:730430630">+48 730 430 630</a>, <a href="tel:507155774">+48 507 155 774</a></span></li>
+                        <li><a class="mail" href="mailto:biuro@abrkontenery.pl">biuro@abrkontenery.pl</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="large-6 medium-6 small-12 columns">
+            <div class="klocek9">
+                <div class="kontakt3">
+                    <iframe marginheight="0" marginwidth="0" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Miko%C5%82%C3%B3w,+ul.+Dzie%C5%84dziela+40&amp;aq=&amp;sll=50.246666,19.004371&amp;sspn=3.017496,4.938354&amp;t=m&amp;num=10&amp;ie=UTF8&amp;hq=&amp;hnear=Mieczys%C5%82awa+Dzie%C5%84dziela+40,+Miko%C5%82%C3%B3w,+miko%C5%82owski,+%C5%9Bl%C4%85skie&amp;ll=50.182287,18.904612&amp;spn=0.011802,0.01929&amp;z=14&amp;iwloc=lyrftr:m,14614306295452029989,50.186214,18.903909&amp;output=embed" scrolling="no" frameborder="0" height="668" width="100%"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="large-6 medium-6 small-12 columns">
+            <div class="klocek10">
+                <div class="kontakt4 row">
+                    <h4>Wyślij projekt</h4>
+                    @using (@Html.BeginForm("Index", "Home", FormMethod.Post, new { @id = "form1", @enctype = "multipart/form-data" }))
+                    {
+
+                        <div class="large-10 medium-10 medium-centered large-centered columns">
+                            @Html.LabelFor(model => model.Name)
+                            @Html.TextBoxFor(model => model.Name)
+                            @Html.ValidationMessageFor(model => model.Name)
+                        </div>
+    <div class="large-10 medium-8 medium-centered large-centered columns">
+        @Html.LabelFor(model => model.Email)
+        @Html.TextBoxFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
+    </div>
+    <div class="large-10 medium-8 medium-centered large-centered columns">
+        @Html.LabelFor(model => model.Phone)
+        @Html.TextBoxFor(model => model.Phone)
+        @Html.ValidationMessageFor(model => model.Phone)
+    </div>
+    <div class="large-10 medium-8 medium-centered large-centered columns">
+        @Html.LabelFor(model => model.Text)
+        @Html.TextAreaFor(model => model.Text)
+        @Html.ValidationMessageFor(model => model.Text)
+    </div>
+    <div class="large-10 medium-8 medium-centered large-centered columns">
+        @Html.LabelFor(model => model.files)
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="button2 btn-file">
+                    Wybierz&hellip; <input type="file" name="files" id="file1" multiple>
+                </span>
+            </span>
+            <input type="text" class="form-control" readonly />
+        </div>
+        <span class="help-block">
+            Wybierz jeden lub kilka plików ( używaj 'ctr' ) załącznika.
+        </span>
+    </div>
+                        <div class="wyslij">
+                            <input type="submit" value="wyślij" class="button1" />
+                        </div>  
+                    }
+                </div>
+                <div data-magellan-destination="kontakt"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<footer>
+    <div class="small-12 medium-8 large-8 columns">
+        <p><span>ABR Sp. z o.o. </span>| Mikołów ul.Dzieńdziela 40 | <span> <a href="tel:534460464">+48 534 460 464</a>,<a href="tel:730430630">+48 730 430 630</a>, <a href="tel:507155774">+48 507 155 774</a> </span> | <a class="footerLink" href="#kontakt">KONTAKT</a></p>
+    </div>
+    <div class="small-12 medium-8 large-4 columns">
+        <a target="_blank" class="right twitter" href="https://twitter.com/"><img src="~/Content/Img/twitter.png" /></a>
+        <a target="_blank" class="right facebook" href="https://www.facebook.com/pages/Pawilony-Kontenery-ABR/420404931426807"><img src="~/Content/Img/Facebook.png" /></a>
+        <a target="_blank" class="right allegro" href="http://abr.na.allegro.pl/"><img src="~/Content/Img/allegro.png" /></a>
+    </div>
+</footer>*@
+

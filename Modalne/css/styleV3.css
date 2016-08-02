@@ -1,0 +1,144 @@
+
+.ogloszenie h1
+{
+  	margin: 15px 5px;
+  	color:#B20008;
+  	text-align: center;
+  	font-weight: normal;
+  	padding: 10px 20px;
+	font-size:1.8em;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+  	-webkit-border-bottom-left-radius: 4px;
+  	-moz-border-radius-bottomright: 4px;
+  	-webkit-border-bottom-right-radius: 4px;
+}
+.ogloszenie h2 {
+  	margin: 0 1px;
+  	font-size:1.6em;
+  	font-weight: normal;
+  	padding: 5px 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.ogloszenie .opis h2
+{
+    color: #B20008;
+    border:0;
+}
+.ogloszenie h3
+{
+	background: #B20008;
+  	margin: 0 1px;
+  	color: #fff;
+  	font-size:17.6px;
+  	font-weight: normal;
+  	padding: 5px 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+.ogloszenie p
+{
+    font-size:14.7167px;
+}
+.ogloszenie table{
+  width: 100%; 
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 18.4px;
+  padding:0.5625rem 0.625rem;
+}
+.ogloszenie table td
+{
+    font-size:12pt;
+    line-height:16.55px;
+}
+.ogloszenie .ceny td
+{
+    border:1px grey solid;
+    text-align:center;
+    
+}
+.ogloszenie table th
+{
+font-size:12pt;
+line-height:16.55px;
+}
+
+.ogloszenie .czerwony {
+	color: #B20008;
+}
+.ogloszenie a:hover
+{
+	text-decoration:underline;
+}
+
+.ogloszenie {
+    background:white;
+    display:block;
+	width:982px;
+	margin-right: auto;
+  	margin-left: auto;
+  	padding-left: 15px;
+  	padding-right: 15px;
+	border-left: 1px solid #9AAAAA;
+	border-bottom: 1px solid #9AAAAA;
+	border-right: 1px solid #9AAAAA;
+	overflow: hidden;
+	-webkit-box-shadow: 1px 1px 10px 1px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    1px 1px 10px 1px rgba(50, 50, 50, 0.5);
+	box-shadow:         1px 1px 10px 1px rgba(50, 50, 50, 0.5);
+	background:white;
+	margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ogloszenie h4 {
+	text-align:center;
+    font-size:21.15px;
+}
+.ogloszenie .button
+{
+	color:#ffffff;
+  	background-color:#B20008;
+  	border-color: #B20008;
+    margin-bottom:2px;
+    margin-top:2px;
+    font-size:14.7167px;
+}
+
+.ogloszenie .button:hover
+{
+
+}
+
+.ogloszenie ul li
+{
+    list-style-type: square;
+    list-style-position:inside;
+}
+.ogloszenie .secondary
+{
+    background-color: #E7E7E7;
+    border-color: #B9B9B9;
+    color: #333;
+}
+.ogloszenie .opis p
+{
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+    line-height: 23.55px;
+}
+
+.ogloszenie .small
+{
+    font-size:11.95px;
+}
+.ogloszenie .clearfix {
+height:1px;
+width:100%;
+display:block;
+}

@@ -1,0 +1,469 @@
+﻿<style type="text/css">
+    div.body_szablon {
+        font-family: "Segoe UI","Helvetica Neue","Helvetica";
+        color: black;
+        margin: 0 auto;
+        width: 1000px;
+        padding: 0px;
+        text-align: center;
+        font-size: 14pt;
+    }
+
+        div.body_szablon a {
+            color: black;
+            font-family: "Segoe UI","Helvetica Neue","Helvetica";
+            text-decoration: none;
+        }
+
+            div.body_szablon a:hover {
+                color: red;
+                font-family: "Segoe UI","Helvetica Neue","Helvetica";
+                text-decoration: none;
+            }
+
+    #lewy_gorny {
+        background: url('http://galeria.abrsteel.pl/kontenery_magazynowe2/anigif.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        float: left;
+        width: 482px;
+        height: 331px;
+        margin: 5px;
+        border: 1px solid #CAC8C8;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+        #lewy_gorny a:hover {
+            background: url('http://galeria.abrsteel.pl/Salon%20Gier/galeria_tlo.png');
+            background-size: 100% 100%;
+            display: block;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+
+    #prawy_gorny {
+        background: url('http://galeria.abrsteel.pl/kontenery_magazynowe2/rzut3d_sprzedaz.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        float: left;
+        width: 482px;
+        height: 331px;
+        margin: 5px;
+        border: 1px solid #CAC8C8;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+        #prawy_gorny a:hover {
+            background: url('http://galeria.abrsteel.pl/kontenery_magazynowe2/rzut3d-h.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 100%;
+            display: block;
+        }
+
+    .lewy_dolny {
+        position: relative;
+        float: left;
+        margin: 5px;
+        width: 315px;
+        height: 330px;
+        background: white;
+        border: 1px solid #CAC8C8;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .lewy_lewy {
+        float: left;
+        margin: 5px;
+        width: 315px;
+        height: 671px;
+        background: white;
+        border: 1px solid #CAC8C8;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    div.body_szablon h1 {
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 14pt;
+        color: white;
+        text-align: center;
+        background: #d40000;
+    }
+
+    div.body_szablon h2 {
+        background: #bebebe;
+        font-weight: 100;
+        font-size: 14pt;
+        color: black;
+        text-align: center;
+    }
+
+    #bezp {
+        background: url('http://galeria.abrsteel.pl/architektura/bezp.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: block;
+    }
+
+        #bezp a:hover {
+            background: url('http://galeria.abrsteel.pl/architektura/bezp-h.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: block;
+            background-repeat: no-repeat;
+        }
+
+    #wnetrze {
+        background: url('http://galeria.abrsteel.pl/Kontener%20magazynowy/parametry%20techniczne-h.jpg');
+        background-size: 100% 100%;
+        
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    .zdj {
+        width: 100%;
+    }
+
+    #zdj1 {
+        background: url('http://galeria.abrsteel.pl/kontenery_magazynowe2/kontenery_magazynowe1_male.JPG');
+    }
+
+    #zdj2 {
+        background: url('http://galeria.abrsteel.pl/kontenery_magazynowe2/kontenery_magazynowe2_male.JPG');
+    }
+
+        #zdj1 a:hover, #zdj2 a:hover, #zdj3 a:hover, #zdj4 a:hover, #lewy_gorny a:hover {
+            background: url('http://galeria.abrsteel.pl/lupa_tlo.png');
+            background-size: 100% 100%;
+            display: block;
+            background-repeat: no-repeat;
+        }
+
+    #zdj3 {
+        background: url('http://galeria.abrsteel.pl/kontenery_magazynowe2/kontenery_magazynowe3_male.JPG');
+    }
+
+    #zdj4 {
+        background: url('http://galeria.abrsteel.pl/Kontener%20magazynowy/drzwi-m.jpg');
+    }
+
+    #zdj1, #zdj2, #zdj3, #zdj4 {
+        background-size: cover;
+    }
+
+    .block_zdj {
+        width: 233px;
+        float: left;
+        margin: 5px;
+        background: white;
+        border: 1px solid #CAC8C8;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    div.body_szablon ul {
+        float: left;
+    }
+
+        div.body_szablon ul li {
+            float: left;
+        }
+
+    div.body_szablon ul, ul li {
+        display: block;
+        list-style: none;
+        margin: 0;
+    }
+
+        div.body_szablon ul a:link, ul a:visited {
+            display: block;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: black;
+            padding: 15px 50px 16px 50px;
+            text-decoration: none;
+        }
+
+        div.body_szablon ul a:hover {
+            background: #E3000A;
+            color: white;
+        }
+
+    #gielda {
+        background: url('http://galeria.abrsteel.pl/allegro_gielda.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+        display: block;
+    }
+
+        #gielda a:hover {
+            background: url('http://galeria.abrsteel.pl/allegro_gielda-h.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: block;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+    #rzetelnosc {
+        background: url('http://galeria.abrsteel.pl/mapa/konturowa-mapa-polski2-h.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+        display: block;
+    }
+
+        #rzetelnosc a:hover {
+            background: url('http://galeria.abrsteel.pl/rzetelnosc.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: block;
+            background-repeat: no-repeat;
+        }
+
+    .bloczek-l, .bloczek-r {
+        width: 480px;
+        height: 196px;
+        font-weight: 500;
+        font-family: "Segoe UI";
+        font-size: 12px;
+        text-align: center;
+        border: 1px solid #CAC8C8;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+        margin: 5px;
+    }
+
+    .bloczek-l {
+        float: left;
+    }
+
+    .bloczek-r {
+        float: left;
+    }
+
+    .lewy_bloczek {
+        width: 60%;
+        float: left;
+        height: 100%;
+        background: green;
+    }
+
+        .lewy_bloczek a:hover {
+            background: #d40000;
+        }
+
+    .prawy_bloczek {
+        width: 40%;
+        float: right;
+        height: 100%;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .pierwszy_blok {
+        width: 100%;
+        height: 55px;
+        position: relative;
+        padding-top: 9px;
+        border-bottom: 1px solid #CAC8C8;
+    }
+
+        .pierwszy_blok a, .drugi_blok a, .trzeci_blok a {
+            text-decoration: none;
+            color: black;
+        }
+
+    .trzeci_blok a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .drugi_blok {
+        width: 100%;
+        height: 56px;
+        border-bottom: 1px solid #CAC8C8;
+        position: relative;
+        padding-top: 9px;
+    }
+
+    .trzeci_blok {
+        width: 100%;
+        height: 56px;
+        border-bottom: 1px solid #CAC8C8;
+        color: white;
+        background: #B20008;
+        position: relative;
+        padding-top: 9px;
+    }
+
+    .wstega {
+        width: 65px;
+        height: 67px;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+        .wstega .wstega-h {
+            font: 300 11px sans-serif;
+            color: #FFF;
+            text-align: center;
+            transform: rotate(45deg);
+            position: relative;
+            padding: 7px 0px;
+            left: -3px;
+            top: 9px;
+            width: 91px;
+            background-color: #BFDC7A;
+            background-image: -moz-linear-gradient(center top, #BFDC7A, #8EBF45);
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+        }
+
+    .tlo_blok {
+        position: absolute;
+    }
+
+    #blok1 {
+        height: 100%;
+        width: 100%;
+        background: url("http://galeria.abrsteel.pl/Kontener%20magazynowy/Morskie%20serafin/mag4.jpg");
+        background-size: cover;
+    }
+
+    #blok2 {
+        height: 100%;
+        width: 100%;
+        background: url("http://galeria.abrsteel.pl/Kontener_budowlany/male/kontener_budowlany.jpg");
+        background-size: cover;
+    }
+
+    #techniczne {
+        width: 100%;
+        padding: 5px;
+        vertical-align: middle;
+    }
+
+        #techniczne td {
+            padding: 6px;
+            font-size: 15px;
+        }
+
+    .tytul {
+        background: #d40000;
+        text-align: center;
+        color: white;
+    }
+
+    .drugi {
+        background: #bebebe;
+        color: black;
+    }
+</style>
+
+<div class="body_szablon">
+    <div id="gorny">
+
+        <div id="lewy_gorny">
+            <a href="http://www.abrkontenery.pl/#socjalny" target="_blank"><img style="width:100%;height:100%;" src="http://galeria.abrsteel.pl/FHRM/Polska-Kopia_zpsd3919a5b.png" /> </a>
+        </div>
+
+        <div id="prawy_gorny">
+            <a href="http://www.abrkontenery.pl/#socjalny" target="_blank"><img style="width:100%;height:100%;" src="http://galeria.abrsteel.pl/FHRM/Polska-Kopia_zpsd3919a5b.png" /> </a>
+
+        </div>
+    </div>
+    <div>
+        <div class="block_zdj" id="zdj1"><a href="http://galeria.abrsteel.pl/kontenery_magazynowe2/kontenery_magazynowe1.JPG" target='_blank'><img style="width:100%;" src="http://galeria.abrsteel.pl/FHRM/Polska-Kopia_zpsd3919a5b.png"></img></a></div>
+        <div class="block_zdj" id="zdj2"><a href="http://galeria.abrsteel.pl/kontenery_magazynowe2/kontenery_magazynowe2.JPG" target='_blank'><img style="width:100%;" src="http://galeria.abrsteel.pl/FHRM/Polska-Kopia_zpsd3919a5b.png"></img></a></div>
+        <div class="block_zdj" id="zdj3"><a href="http://galeria.abrsteel.pl/kontenery_magazynowe2/kontenery_magazynowe3.JPG" target='_blank'><img style="width:100%;" src="http://galeria.abrsteel.pl/FHRM/Polska-Kopia_zpsd3919a5b.png"></img></a></div>
+        <div class="block_zdj" id="zdj4"><a href="http://galeria.abrsteel.pl/kontenery_magazynowe2/magazynowe4.JPG" target='_blank'><img style="width:100%;" src="http://galeria.abrsteel.pl/FHRM/Polska-Kopia_zpsd3919a5b.png"></img></a></div>
+    </div>
+    <div class="lewy_lewy">
+        <table id="techniczne">
+            <tr class="tytul">
+                <td><strong>Informacje</strong></td>
+                <td><strong>Techniczne</strong></td>
+            </tr>
+            <tr>
+                <td>Rodzaj: </td>
+                <td>uniwersalne morskie</td>
+            </tr>
+            <tr class="drugi">
+                <td>Zastosowanie: </td>
+                <td>zaplecza budowy, transport, magazynowanie </td>
+            </tr>
+            <tr>
+                <td>Materiał: </td>
+                <td>Stal typu corten</td>
+            </tr>
+            <tr class="drugi">
+                <td>Podłoga: </td>
+                <td>Drewniana na stalowych usztywnieniach</td>
+            </tr>
+            <tr>
+                <td>Dopuszczenia: </td>
+                <td>Certyfikat bezpiecznego kontenera CSC</td>
+            </tr>
+            <tr class="drugi">
+                <td>Klasyfikacja: </td>
+                <td>Bureau Veritas, Germanisher Lloyd, American Bureau of Shipping</td>
+            </tr>
+            <tr>
+                <td>Składowanie: </td>
+                <td>Do 7 poziomów</td>
+            </tr>
+            <tr class="drugi">
+                <td>Max. Ładowność: </td>
+                <td>20 320 kg</td>
+            </tr>
+            <tr>
+                <td>Pojemność: </td>
+                <td>32.1 m3</td>
+            </tr>
+            <tr class="tytul">
+                <td><strong>Wymiary kontenera</strong></td>
+                <td><strong>Wewnętrzne / Zewnętrzne</strong></td>
+            </tr>
+            <tr>
+                <td>Długość: </td>
+                <td>5 867 mm / 6 058 mm</td>
+            </tr>
+            <tr class="drugi">
+                <td>Szerokość: </td>
+                <td>2 330 mm / 2 438 mm</td>
+
+        </table>
+
+    </div>
+    <div class="lewy_dolny">
+
+
+
+
+        <div id="wnetrze">
+            <a href="http://www.abrkontenery.pl" target="_blank"><img class="rzut" src="http://galeria.abrsteel.pl/FHRM/Polska-Kopia_zpsd3919a5b.png" /> </a>
+        </div>
+    </div>
+    <div class="lewy_dolny" id="rzetelnosc">
+        <a href="http://www.abrkontenery.pl" target="_blank"><img class="rzut" src="http://galeria.abrsteel.pl/FHRM/Polska-Kopia_zpsd3919a5b.png" /> </a>
+    </div>
+
+    <div class="lewy_dolny" id="gielda">
+        <a href="http://gieldakontenerow.pl" target="_blank"><img class="rzut" src="http://galeria.abrsteel.pl/FHRM/Polska-Kopia_zpsd3919a5b.png" /> </a>
+    </div>
+
+
+    <div class="lewy_dolny">
+        <br />
+        <h1>WYSLIJ PROJEKT LUB SZKIC</h1>
+        <a href="mailto:kontenery@abrkontenery.pl">kontenery@abrkontenery.pl</a>
+        <h2>lub faxem 32 326 06 25</h2>
+        <h1>CHCESZ O COŚ ZAPYTAĆ</h1>
+        <h2>534 460 464 | 507 155 774</h2>
+        <h1>LUB ODWIEDŹ NAS NA:</h1>
+        <a href="http://www.abrkontenery.pl">www.abrkontenery.pl</a>
+    </div>
+</div>

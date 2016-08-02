@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/Content/lightbox2-master/dist/css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    @*Set the viewport width to device width for mobile *@
+    <title>ABR Kontenery: wynajem, sprzedaż - producent kontenerów</title>
+
+    <meta name="description" content="ABR Kontenery to producent kontenerów handlowych, magazynowych i budowlanych. W naszej ofercie mamy sprzedaż i wynajem tych kontenerów. Dostarczamy pawilony i kontenery w całej Polsce. Sprzedajemy moduły nowe i używane. Priorytetem jest dla nas bezpieczeństwo i rozwój Twojego biznesu. Zapraszamy do współpracy!">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="http://abrkontenery.pl/abrkontenerypl.jpg"/>
+
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="~/Content/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    @Styles.Render("~/Content/foundation/css")
+
+    <link href="~/Content/responsiveslides.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/cookies")
+    @RenderSection("head", required: false)
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '785466254922360');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=785466254922360&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+    <!-- STYLE v3 allegro -->
+
+    <link rel="stylesheet" type="text/css" href="Modalne/css/styleV3.css" />
+</head>
+<body>
+    @RenderBody()
+
+    
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/foundation")
+    <script>
+        $(document).foundation({
+            "magellan-expedition": {
+                active_class: 'active', // specify the class used for active sections
+                threshold: 0, // how many pixels until the magellan bar sticks, 0 = auto
+                destination_threshold: -30, // pixels from the top of destination for it to be considered active
+                throttle_delay: 60, // calculation throttling to increase framerate
+                fixed_top: 0, // top distance in pixels assigned to the fixed element on scroll
+            }
+        });
+    </script>
+    <script src="~/Scripts/Menu.js"></script>
+    <!--Płynna navigacja-->
+    <script src="~/Scripts/velocity-master/velocity.min.js"></script>
+    <script src="~/Scripts/MenuHome.js"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-55328658-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="~/Content/lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="~/Content/slick/slick.js"></script>
+    @*Use the Scripts section to define page specific scripts*@
+    @RenderSection("scripts", required: false)
+    <script>
+        $(document).ready(function(){
+            $('.slick').slick({    
+                infinite: true,       
+                slidesToShow: 3,
+                arrows: false,
+                autoplay: true,
+                focusOnSelect: true,
+                pauseOnHover: false,
+            });
+        });
+
+    </script>
+    <script>
+    lightbox.option({
+        'showImageNumberLabel': false
+    })
+    </script>
+	<!-- Kod tagu remarketingowego Google -->
+<!--------------------------------------------------
+Tagi remarketingowe nie mogą być wiązane z informacjami umożliwiającymi identyfikację osób ani umieszczane na stronach o tematyce należącej do kategorii kontrowersyjnych. Więcej informacji oraz instrukcje konfiguracji tagu znajdziesz tutaj: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 976662436;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976662436/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- Google Code for abrkontenery Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 976662436;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "QJw8CJes22cQpN_a0QM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript"  
+src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt=""  
+src="//www.googleadservices.com/pagead/conversion/976662436/?label=QJw8CJes22cQpN_a0QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+</body>
+</html>
