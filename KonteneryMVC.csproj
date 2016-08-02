@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -383,6 +384,7 @@
     <Content Include="Content\slick\fonts\slick.woff" />
     <Content Include="Content\slick\slick-theme.scss" />
     <Content Include="Content\slick\slick.scss" />
+    <None Include="Properties\PublishProfiles\FTP abrkontenery.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Modalne\css\styleV3.css" />
     <Content Include="Modalne\HandlowyCzerwony\anigifDuzyCzerwony.gif" />
